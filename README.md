@@ -73,7 +73,7 @@ cease distribution of the unofficial version, unless otherwise authorized to con
     - Any modified version CANNOT be monitized or otherwise charged for, under any circumstances, nor can redistribution of it be limited or restricted.
     - The modified code must continue to be Apache Public License v2, with no additional conditions or restrictions, including full public availability of the
     modified source code.
-    - Any code from Dynmap used in such versions should be built from an appropriate fork, as DynampCore and other components (other than DynmapCpreAPI and 
+    - Any code from Dynmap used in such versions should be built from an appropriate fork, as DynmapCore and other components (other than DynmapCoreAPI and 
     dynmap-api) are subject to breaking changes at any time, and the support messages in DynmapCore MUST be modified to refer to the supporting team (or, at
     least, removed).  The modified version should NOT refer to the Dynmap Discord nor to /r/Dynmap on Reddit for support. in any case.
     - Any bugs or issues opened in conjunction with the use of the modified version on this repository will be closed without comment.
@@ -94,7 +94,8 @@ Plugins or mods using the published APIs - DynmapCoreAPI (for all platforms) or 
 expanded.  These libraries are published at https://repo.mikeprimm.com and will be updated each official release.
 
 # Where to go for questions and discussions
-I've just created a Reddit for the Dynmap family of mods/plugins - please give it a try - https://www.reddit.com/r/Dynmap/
+We have a Discord located at https://discord.gg/52pqBpw
+We also have a subreddit located at https://www.reddit.com/r/Dynmap/
 
 # Where to go to make donations
 I've set up a coffee-fund jar (I believe in the theory that software developers are machines that turn caffeine into code), for anyone who wants to throw in some tips!  I've got a Patreon here - https://www.patreon.com/dynmap, and for folks just looking to for a one-time coffee buy, hit my Ko-Fi at https://ko-fi.com/michaelprimm !
