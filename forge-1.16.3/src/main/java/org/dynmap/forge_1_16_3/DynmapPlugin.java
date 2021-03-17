@@ -239,7 +239,7 @@ public class DynmapPlugin
 			int idx = bsids.getId(bs);
     		if (idx >= stateByID.length) {
     			int plen = stateByID.length;
-    			stateByID = Arrays.copyOf(stateByID, idx+1);
+    			stateByID = Arrays.copyOf(stateByID, idx*11/10); // grow array by 10%    			
     			Arrays.fill(stateByID, plen, stateByID.length, DynmapBlockState.AIR);
     		}
             Block b = bs.getBlock();
@@ -959,7 +959,7 @@ public class DynmapPlugin
                 BlockUpdateRec r = blockupdatequeue.remove();
                 BlockState bs = r.w.getBlockState(new BlockPos(r.x, r.y, r.z));
                 int idx = Block.BLOCK_STATE_IDS.getId(bs);
-                if(!org.dynmap.hdmap.HDBlockModels.isChangeIgnoredBlock(stateByID[idx])) {
+                if((idx >= 0) && (!org.dynmap.hdmap.HDBlockModels.isChangeIgnoredBlock(stateByID[idx]))) {
                     if(onblockchange_with_id)
                         mapManager.touch(r.wid, r.x, r.y, r.z, "blockchange[" + idx + "]");
                     else
